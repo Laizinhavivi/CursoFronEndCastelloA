@@ -1,0 +1,36 @@
+button{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnEnviar{
+    background: green;
+    color: aliceblue;
+}
+
+.btnRemover{
+    background: red;
+    color: aliceblue;
+}
+
+#tarefa{
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}

@@ -31,20 +31,20 @@ button:disabled{
 .opcao{
     display: block;
     padding: 10px;
-    background-color: rgb(84, 128, 143);
+    background-color: lightblue;
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .opcao:hover{
-    background-color: rgb(76, 114, 151);
+    background-color: dodgerblue;
     color: white;
 }
 
 .correta{
     background: green !important;
-    color: rgb(85, 130, 141);
+    color: white;
 }
 
 .errada{

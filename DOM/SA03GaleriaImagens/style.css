@@ -1,13 +1,23 @@
+<<<<<<< HEAD
 /* Folha de Estilização para Galeria de Imagens */
 
 body{
+=======
+/* Folha de Estilização para Galeria de Imagens  */
+
+bpdy{
+>>>>>>> abdf3065d74627a4a9512910110adefd785bb9fb
     font-family: Comic Sans MS;
     text-align: center;
     background-color: aliceblue;
 }
 
 .container{
+<<<<<<< HEAD
     width: 60;
+=======
+    width: 60%;
+>>>>>>> abdf3065d74627a4a9512910110adefd785bb9fb
     margin: auto;
     background-color: white;
     padding: 20px;
@@ -24,14 +34,22 @@ input{
     cursor: pointer;
     border: none;
     border-radius: 5px;
+<<<<<<< HEAD
     background-color: aqua;
+=======
+    background-color: dodgerblue;
+>>>>>>> abdf3065d74627a4a9512910110adefd785bb9fb
     color: white;
 }
 #addImagem:hover{
     background-color: blue;
 }
 
+<<<<<<< HEAD
 /* Imagens da Galeria */
+=======
+/* imagens da galeria */
+>>>>>>> abdf3065d74627a4a9512910110adefd785bb9fb
 #galeria{
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +63,11 @@ input{
 }
 
 .card img{
+<<<<<<< HEAD
     width: 15px;
+=======
+    width: 150px;
+>>>>>>> abdf3065d74627a4a9512910110adefd785bb9fb
     height: 150px;
     object-fit: cover;
     border-radius: 5px;
@@ -62,6 +84,7 @@ input{
     cursor: pointer;
     border-radius: 100%;
 }
+<<<<<<< HEAD
  .remove:hover{
     background-color: red;
  }
@@ -70,6 +93,17 @@ input{
 #CarrosselContainer{
     width: 300px;
     height: 200px;
+=======
+
+.remove:hover{
+    background-color: red;
+}
+
+/* Css do Carrossel */
+#carrosselContainer{
+    width: 300px; 
+    height: 200px; 
+>>>>>>> abdf3065d74627a4a9512910110adefd785bb9fb
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -81,7 +115,10 @@ input{
     display: flex;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     transition: transform 0.5s ease-in-out;
+=======
+>>>>>>> abdf3065d74627a4a9512910110adefd785bb9fb
 }
 
 #carrossel img{

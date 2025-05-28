@@ -1,16 +1,16 @@
-//Estudos de POO em JavaScript
+// Estudos de POO em JavaScript
 
-// Diferença em Procedural e POO
+// Diferença entre Procedural e POO
 
-// declaração de uma variavel em Procedural
+//Declaração de uma variavel em Procedural
 let produto1 = {
-    nome: "Notebook",
+    nome: "Notebbok",
     preco: 3000,
     marca: "Dell",
     desconto: function(){
         return this.preco * 0.1; //10% de desconto
     }
-}//coleção
+}//Coleção
 
 let produto2 = {
     nome: "Celular",
@@ -21,8 +21,8 @@ let produto2 = {
     }
 }
 
-// usando classe para crir produtos (POO)
-class Produto {
+// Usando classe pra criar produtos (POO)
+class Produto{
     //atributos
     //não precisei declarar, JS criar automaticamento a partir do construtor
     //construtor
@@ -31,9 +31,9 @@ class Produto {
         this.preco = preco;
         this.marca = marca;
     }
-    //metodo
+    //Metodo
     desconto(){
-        return this.preco * 0.1; //10% de desconto
+        return this.preco * 0.1;//10% de desconto
     }
 }
 
@@ -43,28 +43,27 @@ let p2 = new Produto("Tablet", 2000, "Samsung");
 console.log(`Produto: ${produto1.nome}, Preço: ${produto1.preco}, Marca: ${produto1.marca}, Desconto: ${produto1.desconto()}`);
 console.log(`Produto: ${p1.nome}, Preço: ${p1.preco}, Marca: ${p1.marca}, Desconto: ${p1.desconto()}`);
 
+//Estudos avançados de POO em JavaScript
 
-//Estudo avançado de POO em JavaScript
-
-// criação de uma classe
+//Criação de uma classe
 
 class Pessoa{
     //atributos (encapsulamento)
-    #nome; //atributo privado
-    #idade; //atributo privado
-    #cpf; //atributo privado
-    //construtor
+    #nome; // atributo privado
+    #idade; // atributo pravado
+    #cpf; // atributo privado
+    //Construtor
     constructor(nome, idade, cpf){
         this.#nome = nome;
         this.#idade = idade;
         this.#cpf = cpf;
     }
-    //métodos públicos
-    //getters and setters (encapsulamento)
+    // Métodos Públicos
+    //Getters and setterns (encapsulamento)
     get getNome(){
         return this.#nome;
     }
-    get getIdade(){
+    get getidade(){
         return this.#idade;
     }
     set setIdade(idade){
@@ -75,11 +74,11 @@ class Pessoa{
     }
     //metodo de acesso
     exibirInfo(){
-        console.log(`Nome: ${this.#nome}\nIdade: ${this.#idade} \nCPF: ${this.#cpf}`);
+        console.log(`Nome: ${this.#nome}\n Idade: ${this.#idade}\n Cpf: ${this.#cpf}`);
     }
 }
 
-//instaciar os objetos da classe
+//instanciar os objetos da classe
 let pessoa1 = new Pessoa("João", 25, "123.456.789-00");
 let pessoa2 = new Pessoa("Maria", 30, "987.654.321-00");
 pessoa1.exibirInfo();
@@ -88,20 +87,20 @@ pessoa2.exibirInfo();
 pessoa1.setIdade=26;
 pessoa1.exibirInfo();
 
-//Herança em POO (extends)
+// Herança em POO
 
-class Funcionario extends Pessoa{
+class funcionario extends Pessoa{
     //atributos
     #cargo;
     #salario;
-    //construtor
+    //Construtor
     constructor(nome, idade, cpf, cargo, salario){
-        super(nome, idade, cpf); // chama da classe superClass
+        super(nome, idade, cpf); //Chama da classe superClass
         this.#cargo = cargo;
         this.#salario = salario;
     }
-    //métodos públicos
-    //getters and setters
+    // métodos públicos
+    // getters and setters
     get getCargo(){
         return this.#cargo;
     }
@@ -117,13 +116,12 @@ class Funcionario extends Pessoa{
     //método de acesso
     exibirInfo(){
         super.exibirInfo();
-        console.log(`Cargo: ${this.#cargo}\nSalário: ${this.#salario}`);
+        console.log(`Cargo: ${this.#cargo}\n Salário: ${this.#salario}`);
     }
 }
-//instanciar os objetos da Classe Fucnionário
-let funcionario1 = new Funcionario("Pedro", 27, "321.654.987-00", "Motorista", 3000);
+//Instaciar os objetos da Classe Funcionário
+let funcionario1 = new funcionario("Pedro", 27, "321.654.987-00", "Motorista", 3000);
 funcionario1.exibirInfo();
 funcionario1.setSalario = 3500;
 funcionario1.exibirInfo();
-
 

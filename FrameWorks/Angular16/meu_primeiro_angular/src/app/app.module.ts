@@ -21,6 +21,7 @@ import { FormsComponent } from './pages/forms/forms.component';
     ProductsComponent,
     ContactComponent,
     BannerComponent,
+<<<<<<< HEAD
     FormsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
@@ -28,3 +29,16 @@ import { FormsComponent } from './pages/forms/forms.component';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+=======
+    FormsComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+>>>>>>> c4eecf554652774b349986992c6f6f04ffc98ba4

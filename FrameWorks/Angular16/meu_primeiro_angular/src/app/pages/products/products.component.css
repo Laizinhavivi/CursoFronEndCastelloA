@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 .card{
     border: 1px solid #ddd;
     padding: 15px;
     margin: 10px;
     display: inline-block;
 }
+=======
+.card {
+  border:  1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
+}
+>>>>>>> c4eecf554652774b349986992c6f6f04ffc98ba4

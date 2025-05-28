@@ -1,7 +1,11 @@
 <div class="container">
 <h2>Registrar Pedido</h2>
 
+<<<<<<< HEAD
 <label for="">Cliente:</label>
+=======
+<label for="">Cliente</label>
+>>>>>>> c4eecf554652774b349986992c6f6f04ffc98ba4
 <select name="clienteSelecionadoId" id="" [(ngModel)]="clienteSelecionadoId">
   <option value="">Selecione um Cliente</option>
   <option *ngFor="let cliente of clientes" [value]=""cliente.id>{{cliente.nome}}</option>
@@ -14,7 +18,14 @@
     {{produto.nome}} - R$ {{produto.preco}}
   </label>
 </div>
+<<<<<<< HEAD
 <label for="">Desconto</label>
 <input type="number" name="desconto" [(ngModel)]="desconto">
+=======
+
+<label for="">Desconto</label>
+<input type="number" name="desconto" [(ngModel)]="desconto">
+
+>>>>>>> c4eecf554652774b349986992c6f6f04ffc98ba4
 <button (click)="salvarPedido()">Registrar Pedido</button>
 </div>

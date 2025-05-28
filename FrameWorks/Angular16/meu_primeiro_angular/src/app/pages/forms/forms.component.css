@@ -50,9 +50,15 @@ textarea:focus {
 }
 
 /* Botão de envio */
+<<<<<<< HEAD
 button[type="submit"] {
   width: 100%;
   padding: 12px;
+=======
+button {
+  margin: 10px 10px;
+  padding: 8px;
+>>>>>>> c4eecf554652774b349986992c6f6f04ffc98ba4
   background: #3182ce;
   color: #fff;
   border: none;

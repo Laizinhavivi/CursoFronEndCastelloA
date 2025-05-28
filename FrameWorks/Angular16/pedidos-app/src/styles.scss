@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 //criar comentários usando barra dupla
 
+<<<<<<< HEAD
 
 //reset das configurações iniciais das tags
  *{
@@ -9,10 +10,21 @@
   box-sizing: border-box;
  }
  body{
+=======
+//reset das configurações iniciais das tags
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+>>>>>>> c4eecf554652774b349986992c6f6f04ffc98ba4
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: aliceblue;
   color: #333;
   padding: 20px;
+<<<<<<< HEAD
  }
  //container
  .container{
@@ -32,10 +44,32 @@
  button{
   padding: 8px 16px;
   background-color: aqua;
+=======
+}
+
+//container
+.container {
+  max-width: 1000px;
+  margin: 0 auto; //centralizar
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+h1, h2, h3 {
+  color: green;
+  margin-bottom: 12px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: deepskyblue;
+>>>>>>> c4eecf554652774b349986992c6f6f04ffc98ba4
   border: none;
   color: #ddd;
   border-radius: 5px;
   cursor: pointer;
+<<<<<<< HEAD
  }
 
  &:hover{
@@ -43,21 +77,46 @@
  }
 
  input, select{
+=======
+
+  &:hover{
+    background-color: dodgerblue;
+  }
+}
+
+input, select{
+>>>>>>> c4eecf554652774b349986992c6f6f04ffc98ba4
   padding: 8px;
   margin: 8px 0 16px 0;
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+<<<<<<< HEAD
  }
  label{
+=======
+}
+
+label {
+>>>>>>> c4eecf554652774b349986992c6f6f04ffc98ba4
   font-size: 12px;
   font-weight: bold;
   display: block;
   margin-top: 12px;
+<<<<<<< HEAD
  }
  hr{
   margin: 20px 0;
   border: none;
   border-top: 1px solid #aaa;
  }
+=======
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #aaa;
+}
+>>>>>>> c4eecf554652774b349986992c6f6f04ffc98ba4

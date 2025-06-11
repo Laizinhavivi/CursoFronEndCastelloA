@@ -7,8 +7,7 @@ import { VagaService } from 'src/app/services/vaga.service';
   templateUrl: './vagas.component.html',
   styleUrls: ['./vagas.component.scss'],
 })
-export class VagasComponent implements OnInit {
-  //elementos do Controller
+export class VagasComponent implements OnInit { //controller 
   public vagas: Vaga[] = []; //vetor para armazenar as vagas do Backend
 
   constructor(private _vagaService: VagaService) {} // ao instanciar obj -> conecta com Service Vaga

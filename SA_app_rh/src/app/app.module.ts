@@ -8,7 +8,8 @@ import { FooterComponent } from './templates/footer/footer.component';
 import { VagasComponent } from './views/vagas/vagas.component';
 import { CurriculosComponent } from './views/curriculos/curriculos.component';
 import { HomeComponent } from './views/home/home.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -23,7 +24,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule, //módulo necessário para que a página faça as requisições HttpClient
+    HttpClientModule,
     FormsModule
   ],
   providers: [],

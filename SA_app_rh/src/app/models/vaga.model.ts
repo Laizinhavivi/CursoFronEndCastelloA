@@ -56,18 +56,18 @@ export class Vaga {
   // }
 
   //conversão BD <=> obj
-  toMap(): { [key: string]: any } {
-    //obj -> bd
-    return {
-      id: this.id,
-      nome: this.nome,
-      foto: this.foto,
-      descricao: this.descricao,
-      salario: this.salario,
-    };
+//  toMap(): { [key: string]: any } {
+   // //obj -> bd
+    //return {
+      //id: this.id,
+      //nome: this.nome,
+      //foto: this.foto,
+      //descricao: this.descricao,
+      //salario: this.salario,
+    //};
   }
   //fromMap : BD => obj
-  static fromMap(map: any): Vaga {
-    return new Vaga(map.id, map.nome, map.foto, map.descricao, map.salario);
-  }
-}
+  //static fromMap(map: any): Vaga {
+    //return new Vaga(map.id, map.nome, map.foto, map.descricao, map.salario);
+  //}
+//}

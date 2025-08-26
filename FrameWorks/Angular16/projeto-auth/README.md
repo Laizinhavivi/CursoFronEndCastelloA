@@ -25,3 +25,32 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+Caso o npm seja bloqueado ->
+
+Abrir o PowerShell como adm
+
+set-executionpolicy unrestricted 
+autorizar tudo
+
+------------------------------------------------------------------------
+~Verificar se o node está instalado: 
+node --version, caso não esteja node install
+
+~Verificar se os pacotes estão instalados:
+npm --version, caso não esteja npm install
+
+~Instalar o angular :
+ npx npm install -g @angular/cli@16
+~Criar um projeto : 
+npx ng new projeto-auth --routing --style=scss
+~Abrir o projeto em uma nova janela
+~Instalar o json server simultaneamente : 
+ npm install json-server concurrently --save-dev 
+~start o servidor -> package.json -> "start": "concurrently \"ng server\" \"json-server --watch db.json --port 3008\"",
+
+
+
+service -> reponsável para fazer a conexão com o banco de dados.
